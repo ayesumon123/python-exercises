@@ -6,65 +6,70 @@ class Animal(object):
 class Dog(Animal):
 
     def __init__(self, name):
-
         ## ??
-        class Cat(Animal):
+        self.name = name
+## ??
+class Cat(Animal):
 
-            def __init__(self, name):
-                ## ??
-                self.name = name
+    def __init__(self, name):
+        ## ??
+        self.name = name
 
-                ## ??
-                class Person(object):
+## ??
+class Person(object):
 
-                    def __init__(self, name):
-                        ## ??
-                        self.name = name
+    def __init__(self, name):
+        ## ??
+        self.name = name
 
-                        ## Person has-a pet of some kind
-                        self.pet = None
+        ## Person has-a pet of some kind
+        self.pet = None
 
-                        ## ??
-                        class Employee(Person):
+## ??
+class Employee(Person):
 
-                            def __init__(self, name, salary):
-                                ## ?? hmm what is this strange magic?
-                                super(Employee, self).__init__(name)
-                                ## ??
-                                self.salary = salary
+    def __init__(self, name, salary):
+        ## ?? hmm what is this strange magic?
+        super(Employee, self).__init__(name)
+        ## ??
+        self.salary = salary
 
-                                ## ??
-                                class Salmon(Fish):
-                                    pass
+## ??
+class Fish(object):
+    pass
 
-                                ## ??
-                                class Halibut(Fish):
-                                    pass
+## ??
+class Salmon(Fish):
+    pass
+
+## ??
+class Halibut(Fish):
+    pass
 
 
-                                ## rover is-a Dog
-                                rover = Dog("Rover")
+## rover is-a Dog
+rover = Dog("Rover")
 
-                                ## ??
-                                satan = Cat("Satan")
+## ??
+satan = Cat("Satan")
 
-                                ## ??
-                                mary = Person("Mary")
+## ?
+mary = Person("Mary")
 
-                                ## ??
-                                mary.pet = satan
+## ??
+mary.pet = satan
 
-                                ## ??
-                                frank = Employee("Frank", 120000)
+## ??
+frank = Employee("Frank", 120000)
 
-                                ## ??
-                                frank.pet = rover
+## ??
+frank.pet = rover
 
-                                ## ??
-                                flipper = Fish()
+## ??
+flipper = Fish()
 
-                                ## ??
-                                crouse = Salmon()
+## ??
+crouse = Salmon()
 
-                                ## ??
-                                harry = Halibut()
+## ??
+harry = Halibut()

@@ -22,31 +22,31 @@ class Child(Parent):
     def override(self):
         print("CHILD override()")
 
- dad = Parent()
- son = Child()
+dad = Parent()
+son = Child()
 
- dad.override()
- son.override()
+dad.override()
+son.override()
 
- class Parent(object):
+class Parent(object):
 
     def altered(self):
         print("PARENT altered()")
 
- class Child(Parent):
+class Child(Parent):
 
     def altered(self):
         print("CHILD, BEFORE PARENT altered()")
         super(Child, self).altered()
         print("CHILD, AFTER PARENT altered()")
 
- dad = Parent()
- son = Child()
+dad = Parent()
+son = Child()
 
- dad.altered()
- son.altered()
+dad.altered()
+son.altered()
 
- class Parent(object):
+class Parent(object):
 
     def override(self):
         print("PARENT override()")
@@ -57,7 +57,7 @@ class Child(Parent):
     def altered(self):
         print("PARENT altered()")
 
- class Child(Parent):
+class Child(Parent):
 
     def override(self):
         print("CHILD override()")
@@ -65,22 +65,22 @@ class Child(Parent):
 
     def altered(self):
         print("CHILD, BEFORE PARENT altered()")
-        super("CHILD, AFTER PARENT altered()")
-        print("CHILD", AFTER PARENT altered()")
+        super(Child, self).altered()
+        print("CHILD, AFTER PARENT altered()")
 
- dad = Parent()
- son = Child()
+dad = Parent()
+son = Child()
 
- dad.implicit()
- son.implicit()
+dad.implicit()
+son.implicit()
 
- dad.override()
- son.override()
+dad.override()
+son.override()
 
- dad.altered()
- son.altered()
+dad.altered()
+son.altered()
 
- class Other(object):
+class Other(object):
 
     def override(self):
         print("OTHER override()")
@@ -91,7 +91,7 @@ class Child(Parent):
     def altered(self):
         print("OTHER altered()")
 
- class Child(object):
+class Child(object):
 
     def __init__(self):
         self.other = Other()
@@ -107,9 +107,9 @@ class Child(Parent):
         self.other.altered()
         print("CHILD, AFTER OTHER altered()")
 
- son = Child()
+son = Child()
 
- son.implicit()
- son.override()
- son.altered()
+son.implicit()
+son.override()
+son.altered()
 

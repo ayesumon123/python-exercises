@@ -4,64 +4,55 @@ class Scene(object):
         pass
 
 
-    class Engine(object):
+class Engine(object):
 
-        def enter(self):
-            pass
-
-
-        class Engine(object):
-
-            def __init__(self, scene_map):
+    def __init__(self, scene_map):
                 pass
 
-            def play(self):
-                pass
+    def play(self):
+        pass
 
-            def play(self):
-                pass
+class Death(Scene):
 
-            class Death(Scene):
+    def enter(self):
+        pass
 
-                def enter(self):
-                    pass
+class CentralCorridor(Scene):
 
-                class CentralCorridor(Scene):
+    def enter(self):
+        pass
 
-                    def enter(self):
-                        pass
+class LaserWeaponArmory(Scene):
 
-                    class LaserWeaponArmory(Scene):
+    def enter(self):
+        pass
 
-                        def enter(self):
-                            pass
+class TheBridge(Scene):
 
-                        class TheBridge(Scene):
+    def enter(self):
+        pass
 
-                            def enter(self):
-                                pass
+class EscapePod(Scene):
 
-                            class EscapePod(Scene):
-
-                                def enter(self):
-                                    pass
+    def enter(self):
+        pass
 
 
-                                class Map(object):
+class Map(object):
 
-                                    def __init__(self, start_scene):
-                                        pass
+    def __init__(self, start_scene):
+        pass
 
-                                    def next_scene(self, scene_name):
-                                        pass
+    def next_scene(self, scene_name):
+        pass
                                     
-                                    def opening_scene(self):
-                                        pass
+    def opening_scene(self):
+        pass
 
 
-                                    a_map = Map('central_corridor')
-                                    a_game = Engine(a_map)
-                                    a_game.play()
+a_map = Map('central_corridor')
+a_game = Engine(a_map)
+a_game.play()
 
 
 
